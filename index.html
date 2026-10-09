@@ -1,159 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-layout="classic">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Si Wang, Ph.D. student at Zhejiang University. Robotics, perception, localization, and world models.">
   <title>Si Wang | Zhejiang University</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css?v=20260530">
+  <link rel="canonical" href="https://hiones.github.io/">
+  <link rel="stylesheet" href="assets/styles.css?v=20261009-2">
+  <script src="assets/preferences.js?v=20261009-2"></script>
+  <script src="assets/vendor/lucide.min.js" defer></script>
+  <script src="assets/site.js?v=20261009-2" defer></script>
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#biography" data-i18n="skip">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#top">Si Wang</a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#biography">Biography</a>
-      <a href="#publications">Publications</a>
-      <a href="#news">News</a>
-    </nav>
+    <div class="header-inner shell">
+      <a class="brand" href="#top">Si Wang<span class="brand-dot" aria-hidden="true">.</span></a>
+      <nav class="nav" aria-label="Primary navigation" data-i18n-aria="navigation">
+        <a href="#biography" data-i18n="biography">Biography</a>
+        <a href="#publications" data-i18n="publications">Publications</a>
+        <a href="#news" data-i18n="news">News</a>
+      </nav>
+      <div class="language-switch js-only" role="group" aria-label="Language" data-i18n-aria="language">
+        <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-language="zh" lang="zh-CN" aria-pressed="false">中文</button>
+      </div>
+    </div>
   </header>
 
-  <main id="top">
-    <section id="biography" class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow"><i data-lucide="user" aria-hidden="true"></i>Biography</p>
-        <p class="name-line">Si Wang <span>王斯</span></p>
-        <p class="lead">
-          I am a Ph.D. student in the College of Control Science and Engineering at Zhejiang University,
-          advised by Prof. <a href="https://ywang-zju.github.io/" target="_blank" rel="noreferrer">Yue Wang</a>
-          and Prof. <a href="https://person.zju.edu.cn/en/rongxiong" target="_blank" rel="noreferrer">Rong Xiong</a>.
-          My research focuses on robotics, perception, localization, and world models, with an emphasis
-          on learning-based localization and sensor fusion for robots operating in real-world environments.
-        </p>
-        <div class="hero-actions" aria-label="Contact and profiles">
-          <a class="button" href="mailto:12532114@zju.edu.cn"><i data-lucide="mail" aria-hidden="true"></i>Email</a>
-          <a class="button" href="https://github.com/HiOnes" target="_blank" rel="noreferrer"><i data-lucide="code" aria-hidden="true"></i>GitHub</a>
-          <a class="button" href="https://scholar.google.com/citations?user=sQlwQc0AAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer"><i data-lucide="graduation-cap" aria-hidden="true"></i>Google Scholar</a>
-        </div>
-      </div>
+  <main class="page-grid shell">
+    <div class="profile">
       <figure class="portrait-wrap">
-        <img class="portrait" src="assets/profile.jpg" alt="Portrait of Si Wang">
+        <img class="portrait" src="assets/profile.jpg" width="605" height="800" alt="Portrait of Si Wang" data-i18n-alt="portrait">
       </figure>
-    </section>
-
-    <section id="publications" class="section">
-      <div class="section-heading">
-        <p class="section-kicker"><i data-lucide="book-open" aria-hidden="true"></i>Publications</p>
+      <div class="identity">
+        <h1>Si Wang <span lang="zh-CN">王斯</span></h1>
+        <p data-i18n="affiliation">Ph.D. Student · Zhejiang University</p>
       </div>
+      <div class="contact-links" aria-label="Contact and profiles" data-i18n-aria="contact">
+        <a href="mailto:12532114@zju.edu.cn"><i data-lucide="mail" aria-hidden="true"></i><span data-i18n="email">Email</span></a>
+        <a href="https://github.com/HiOnes" target="_blank" rel="noreferrer"><i data-lucide="code" aria-hidden="true"></i>GitHub</a>
+        <a href="https://scholar.google.com/citations?user=sQlwQc0AAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer"><i data-lucide="graduation-cap" aria-hidden="true"></i>Google Scholar</a>
+      </div>
+    </div>
 
-      <article class="publication featured">
-        <a class="paper-thumb" href="papers/anyamber.pdf" aria-label="Open AnyAmber PDF">
-          <img src="assets/anyamber-teasing.png" alt="Overview illustration of AnyAmber">
-        </a>
-        <div class="paper-body">
-          <div class="paper-meta">
-            <span>RSS 2026</span>
-          </div>
-          <h3>AnyAmber: A Generalist for Versatile Anonymous Bearing and Range Based Position Tracking</h3>
-          <p class="authors"><strong>Si Wang</strong>, Yanmei Jiao, Yanjun Cao, Rong Xiong, Yue Wang</p>
-          <p>
-            A generalist neural framework for versatile anonymous bearing and range based position tracking
-            across different robot numbers, anchor configurations, UWB layouts, and observation settings.
-          </p>
-          <div class="links">
-            <a href="papers/anyamber.pdf"><i data-lucide="file-text" aria-hidden="true"></i>PDF</a>
-            <a href="https://github.com/HiOnes/AnyAmber" target="_blank" rel="noreferrer"><i data-lucide="code" aria-hidden="true"></i>Code</a>
-          </div>
-        </div>
-      </article>
+    <div class="content">
+      <section id="biography" class="biography" aria-labelledby="biography-heading">
+        <h2 id="biography-heading"><i data-lucide="user-round" aria-hidden="true"></i><span data-i18n="biography">Biography</span></h2>
+        <p data-i18n="bioEducation">I am a Ph.D. student in the College of Control Science and Engineering at Zhejiang University, advised by Prof. <a href="https://ywang-zju.github.io/" target="_blank" rel="noreferrer">Yue Wang</a> and Prof. <a href="https://person.zju.edu.cn/en/rongxiong" target="_blank" rel="noreferrer">Rong Xiong</a>.</p>
+        <p data-i18n="bioResearch">My research interests include robotics, perception, localization, and world models. I work on learning-based localization and sensor fusion for robots operating in real-world environments.</p>
+      </section>
 
-      <article class="publication">
-        <a class="paper-thumb" href="papers/nrio.pdf" aria-label="Open Neural Ranging Inertial Odometry PDF">
-          <img src="assets/nrio-overview.png" alt="Overview illustration of Neural Ranging Inertial Odometry">
-        </a>
-        <div class="paper-body">
-          <div class="paper-meta">
-            <span>ICRA 2025</span>
-          </div>
-          <h3>Neural Ranging Inertial Odometry</h3>
-          <p class="authors"><strong>Si Wang</strong>, Bingqi Shen, Fei Wang, Yanjun Cao, Rong Xiong, Yue Wang</p>
-          <p>
-            A neural fusion framework for UWB ranging and inertial odometry that adapts to challenging
-            environments, flexible anchor or tag layouts, and sparse ranging constraints.
-          </p>
-          <div class="links">
-            <a href="papers/nrio.pdf"><i data-lucide="file-text" aria-hidden="true"></i>PDF</a>
-            <a href="https://arxiv.org/abs/2512.10531" target="_blank" rel="noreferrer"><i data-lucide="external-link" aria-hidden="true"></i>arXiv</a>
-            <a href="https://doi.org/10.1109/ICRA55743.2025.11128550" target="_blank" rel="noreferrer"><i data-lucide="link" aria-hidden="true"></i>DOI</a>
-          </div>
-        </div>
-      </article>
+      <section id="publications" class="publications section" aria-labelledby="publications-heading">
+        <h2 id="publications-heading"><i data-lucide="book-open" aria-hidden="true"></i><span data-i18n="publications">Publications</span></h2>
 
-      <article class="publication">
-        <a class="paper-thumb" href="papers/mr-virgil.pdf" aria-label="Open Mr. Virgil PDF">
-          <img src="assets/mr-virgil-overview.png" alt="Overview illustration of Mr. Virgil">
-        </a>
-        <div class="paper-body">
-          <div class="paper-meta">
-            <span>IROS 2025</span>
+        <article class="publication" id="anyamber">
+          <a class="paper-thumb" href="assets/anyamber-experiment.gif" data-figure="anyamber" aria-label="Enlarge AnyAmber experiment animation" data-i18n-aria="zoomAnyamber">
+            <img src="assets/anyamber-experiment.gif" width="697" height="480" loading="lazy" decoding="async" alt="Animated AnyAmber experiments in simulated and real-world robot localization scenarios" data-i18n-alt="altAnyamber">
+            <span class="zoom-icon js-only" aria-hidden="true"><i data-lucide="expand"></i></span>
+          </a>
+          <div class="paper-body">
+            <p class="venue">RSS <span>2026</span></p>
+            <h3><a href="https://roboticsproceedings.org/rss22/p168.html" target="_blank" rel="noreferrer">AnyAmber: A Generalist for Versatile Anonymous Bearing and Range Based Position Tracking</a></h3>
+            <p class="authors"><strong>Si Wang</strong>, Yanmei Jiao, Yanjun Cao, Rong Xiong, Yue Wang</p>
+            <p class="paper-summary" data-i18n="summaryAnyamber">A generalist neural framework for anonymous bearing and range based position tracking across different robot numbers, anchor configurations, UWB layouts, and observation settings.</p>
+            <div class="paper-links">
+              <a href="https://roboticsproceedings.org/rss22/p168.pdf" target="_blank" rel="noreferrer"><i data-lucide="file-text" aria-hidden="true"></i>PDF</a>
+              <a href="https://roboticsproceedings.org/rss22/p168.html" target="_blank" rel="noreferrer"><i data-lucide="external-link" aria-hidden="true"></i><span data-i18n="proceedings">Proceedings</span></a>
+              <a href="https://github.com/HiOnes/AnyAmber" target="_blank" rel="noreferrer"><i data-lucide="code" aria-hidden="true"></i><span data-i18n="code">Code</span></a>
+            </div>
           </div>
-          <h3>Mr. Virgil: Learning Multi-robot Visual-range Relative Localization</h3>
-          <p class="authors"><strong>Si Wang</strong>, Zhehan Li, Jiadong Lu, Rong Xiong, Yanjun Cao, Yue Wang</p>
-          <p>
-            An end-to-end visual-range relative localization framework that combines graph neural data
-            association with differentiable pose graph optimization for multi-robot systems.
-          </p>
-          <div class="links">
-            <a href="papers/mr-virgil.pdf"><i data-lucide="file-text" aria-hidden="true"></i>PDF</a>
-            <a href="https://arxiv.org/abs/2512.10540" target="_blank" rel="noreferrer"><i data-lucide="external-link" aria-hidden="true"></i>arXiv</a>
-            <a href="https://github.com/HiOnes/Mr-Virgil" target="_blank" rel="noreferrer"><i data-lucide="code" aria-hidden="true"></i>Code</a>
-            <a href="https://doi.org/10.1109/IROS60139.2025.11247592" target="_blank" rel="noreferrer"><i data-lucide="link" aria-hidden="true"></i>DOI</a>
-          </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="publication">
-        <a class="paper-thumb" href="https://dblp.org/rec/journals/ral/LiuXLWWXW25" target="_blank" rel="noreferrer" aria-label="Open RA-L DBLP entry">
-          <img src="assets/sparse-overview.png" alt="Overview illustration of Sparse Hierarchical LiDAR Bundle Adjustment">
-        </a>
-        <div class="paper-body">
-          <div class="paper-meta">
-            <span>IEEE RA-L 2025</span>
-            <span>Vol. 10, No. 6</span>
+        <article class="publication" id="nrio">
+          <a class="paper-thumb" href="assets/nrio-overview.png" data-figure="nrio" aria-label="Enlarge Neural Ranging Inertial Odometry overview" data-i18n-aria="zoomNrio">
+            <img src="assets/nrio-overview.png" width="1200" height="430" loading="lazy" alt="Overview of the inertial and UWB networks in Neural Ranging Inertial Odometry" data-i18n-alt="altNrio">
+            <span class="zoom-icon js-only" aria-hidden="true"><i data-lucide="expand"></i></span>
+          </a>
+          <div class="paper-body">
+            <p class="venue">ICRA <span>2025</span></p>
+            <h3><a href="https://arxiv.org/abs/2512.10531" target="_blank" rel="noreferrer">Neural Ranging Inertial Odometry</a></h3>
+            <p class="authors"><strong>Si Wang</strong>, Bingqi Shen, Fei Wang, Yanjun Cao, Rong Xiong, Yue Wang</p>
+            <p class="paper-summary" data-i18n="summaryNrio">A neural fusion framework for UWB ranging and inertial odometry that adapts to challenging environments, flexible anchor or tag layouts, and sparse ranging constraints.</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/pdf/2512.10531" target="_blank" rel="noreferrer"><i data-lucide="file-text" aria-hidden="true"></i>PDF</a>
+              <a href="https://arxiv.org/abs/2512.10531" target="_blank" rel="noreferrer"><i data-lucide="external-link" aria-hidden="true"></i>arXiv</a>
+              <a href="https://doi.org/10.1109/ICRA55743.2025.11128550" target="_blank" rel="noreferrer"><i data-lucide="link" aria-hidden="true"></i>DOI</a>
+            </div>
           </div>
-          <h3>Sparse Hierarchical LiDAR Bundle Adjustment for Online Collaborative Localization and Mapping</h3>
-          <p class="authors">Jiangpin Liu, Xuecheng Xu, Sha Lu, <strong>Si Wang</strong>, Chaoqun Wang, Rong Xiong, Yue Wang</p>
-          <p>
-            IEEE Robotics and Automation Letters, 10(6): 5561-5568, 2025.
-          </p>
-          <div class="links">
-            <a href="https://dblp.org/rec/journals/ral/LiuXLWWXW25" target="_blank" rel="noreferrer"><i data-lucide="database" aria-hidden="true"></i>DBLP</a>
-          </div>
-        </div>
-      </article>
-    </section>
+        </article>
 
-    <section id="news" class="section news-section">
-      <div>
-        <p class="section-kicker"><i data-lucide="newspaper" aria-hidden="true"></i>News</p>
+        <article class="publication" id="mr-virgil">
+          <a class="paper-thumb" href="assets/mr-virgil-overview.png" data-figure="virgil" aria-label="Enlarge Mr. Virgil overview" data-i18n-aria="zoomVirgil">
+            <img src="assets/mr-virgil-overview.png" width="1200" height="328" loading="lazy" alt="Overview of graph-based data association and pose optimization in Mr. Virgil" data-i18n-alt="altVirgil">
+            <span class="zoom-icon js-only" aria-hidden="true"><i data-lucide="expand"></i></span>
+          </a>
+          <div class="paper-body">
+            <p class="venue">IROS <span>2025</span></p>
+            <h3><a href="https://arxiv.org/abs/2512.10540" target="_blank" rel="noreferrer">Mr. Virgil: Learning Multi-robot Visual-range Relative Localization</a></h3>
+            <p class="authors"><strong>Si Wang</strong>, Zhehan Li, Jiadong Lu, Rong Xiong, Yanjun Cao, Yue Wang</p>
+            <p class="paper-summary" data-i18n="summaryVirgil">An end-to-end visual-range relative localization framework combining graph neural data association with differentiable pose graph optimization for multi-robot systems.</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/pdf/2512.10540" target="_blank" rel="noreferrer"><i data-lucide="file-text" aria-hidden="true"></i>PDF</a>
+              <a href="https://arxiv.org/abs/2512.10540" target="_blank" rel="noreferrer"><i data-lucide="external-link" aria-hidden="true"></i>arXiv</a>
+              <a href="https://github.com/HiOnes/Mr-Virgil" target="_blank" rel="noreferrer"><i data-lucide="code" aria-hidden="true"></i><span data-i18n="code">Code</span></a>
+              <a href="https://doi.org/10.1109/IROS60139.2025.11247592" target="_blank" rel="noreferrer"><i data-lucide="link" aria-hidden="true"></i>DOI</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" id="sparse-hba">
+          <a class="paper-thumb" href="assets/sparse-overview.png" data-figure="sparse" aria-label="Enlarge Sparse Hierarchical LiDAR Bundle Adjustment overview" data-i18n-aria="zoomSparse">
+            <img src="assets/sparse-overview.png" width="1200" height="394" loading="lazy" alt="Overview of the multi-robot hierarchical LiDAR bundle adjustment system" data-i18n-alt="altSparse">
+            <span class="zoom-icon js-only" aria-hidden="true"><i data-lucide="expand"></i></span>
+          </a>
+          <div class="paper-body">
+            <p class="venue">IEEE RA-L <span>2025</span></p>
+            <h3><a href="https://ieeexplore.ieee.org/document/10947501/" target="_blank" rel="noreferrer">Sparse Hierarchical LiDAR Bundle Adjustment for Online Collaborative Localization and Mapping</a></h3>
+            <p class="authors">Jiangpin Liu, Xuecheng Xu, Sha Lu, <strong>Si Wang</strong>, Chaoqun Wang, Rong Xiong, Yue Wang</p>
+            <p class="paper-summary" data-i18n="summarySparse">Sparse hierarchical LiDAR bundle adjustment for accurate, low-latency collaborative localization and mapping across multiple robots.</p>
+            <p class="citation">IEEE Robotics and Automation Letters, 10(6): 5561–5568, 2025.</p>
+            <div class="paper-links">
+              <a href="https://ieeexplore.ieee.org/document/10947501/" target="_blank" rel="noreferrer"><i data-lucide="external-link" aria-hidden="true"></i>IEEE Xplore</a>
+              <a href="https://dblp.org/rec/journals/ral/LiuXLWWXW25" target="_blank" rel="noreferrer"><i data-lucide="database" aria-hidden="true"></i>DBLP</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="news" class="news section" aria-labelledby="news-heading">
+        <h2 id="news-heading"><i data-lucide="newspaper" aria-hidden="true"></i><span data-i18n="news">News</span></h2>
         <ul class="news-list">
-          <li><time>2026.04</time><span><strong>AnyAmber</strong> was accepted to Robotics: Science and Systems 2026 (RSS 2026).</span></li>
-          <li><time>2025.06</time><span><strong>Mr. Virgil</strong> was accepted to IEEE/RSJ International Conference on Intelligent Robots and Systems 2025 (IROS 2025).</span></li>
-          <li><time>2025.06</time><span><strong>Sparse Hierarchical LiDAR Bundle Adjustment</strong> was published in IEEE Robotics and Automation Letters 2025 (RA-L 2025).</span></li>
-          <li><time>2025.01</time><span><strong>Neural Ranging Inertial Odometry</strong> was accepted to IEEE International Conference on Robotics and Automation 2025 (ICRA 2025).</span></li>
-          <li><time>2023.07</time><span><strong>ZJUNlict</strong> won the RoboCup China Open 2023 Small Size League championship and the RoboCup 2023 Small Size League world runner-up.</span></li>
+          <li><time datetime="2026-07">2026.07</time><span data-i18n="newsPublished"><strong>AnyAmber</strong> was published in the proceedings of RSS 2026. <a href="https://roboticsproceedings.org/rss22/p168.html" target="_blank" rel="noreferrer">Paper</a></span></li>
+          <li><time datetime="2026-04">2026.04</time><span data-i18n="newsRss"><strong>AnyAmber</strong> was accepted to Robotics: Science and Systems (RSS 2026).</span></li>
+          <li><time datetime="2025-06">2025.06</time><span data-i18n="newsIros"><strong>Mr. Virgil</strong> was accepted to the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025).</span></li>
+          <li><time datetime="2025-06">2025.06</time><span data-i18n="newsRal"><strong>Sparse Hierarchical LiDAR Bundle Adjustment</strong> appeared in the June issue of IEEE Robotics and Automation Letters (RA-L 2025).</span></li>
+          <li><time datetime="2025-01">2025.01</time><span data-i18n="newsIcra"><strong>Neural Ranging Inertial Odometry</strong> was accepted to the IEEE International Conference on Robotics and Automation (ICRA 2025).</span></li>
+          <li><time datetime="2023-07">2023.07</time><span data-i18n="newsRobocup"><strong>ZJUNlict</strong> won the RoboCup China Open 2023 Small Size League championship and finished as runner-up at RoboCup 2023.</span></li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 Si Wang. Last updated May 2026.</p>
+  <footer class="site-footer shell">
+    <p data-i18n="footer">© 2026 Si Wang. Last updated October 2026.</p>
     <a href="mailto:12532114@zju.edu.cn">12532114@zju.edu.cn</a>
   </footer>
-  <script src="assets/vendor/lucide.min.js"></script>
-  <script>
-    lucide.createIcons({ strokeWidth: 2 });
-  </script>
+
+  <dialog class="figure-dialog" aria-labelledby="figure-caption">
+    <div class="figure-toolbar">
+      <p id="figure-caption"></p>
+      <button type="button" class="icon-button" id="zoom-figure" aria-label="Actual size" title="Actual size" aria-pressed="false" data-i18n-aria="actual" data-i18n-title="actual"><i class="zoom-fit" data-lucide="zoom-in" aria-hidden="true"></i><i class="zoom-actual" data-lucide="zoom-out" aria-hidden="true"></i></button>
+      <a class="icon-button" id="original-image" target="_blank" rel="noreferrer" aria-label="Open original image" title="Open original image" data-i18n-aria="original" data-i18n-title="original"><i data-lucide="external-link" aria-hidden="true"></i></a>
+      <button type="button" class="icon-button" id="close-figure" aria-label="Close image" title="Close image" data-i18n-aria="close" data-i18n-title="close"><i data-lucide="x" aria-hidden="true"></i></button>
+    </div>
+    <div class="figure-stage"><img id="figure-image" alt=""></div>
+  </dialog>
 </body>
 </html>

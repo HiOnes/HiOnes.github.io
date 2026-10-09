@@ -1,4 +1,6 @@
 .DS_Store
+/.preview/
+/papers/*.pdf
 /resume.pdf
 /AnyAmber.pdf
 /Mr__Virgil.pdf

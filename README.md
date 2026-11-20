@@ -8,6 +8,11 @@ My research interests include robotics, perception, localization, and world mode
 
 ## Selected Publications
 
+- **AnyAmber++: Diffusion Filtering with Recurrent Conditioning for Versatile Anonymous Bearing and Range based Localization**<br>
+  **Si Wang**, Yanjun Cao, Haojian Lu, Rong Xiong, Yue Wang<br>
+  Submitted to IEEE Transactions on Robotics (T-RO), November 2026.<br>
+  A diffusion filter with recurrent conditioning for single-robot absolute and multi-robot relative localization without an initial pose prior, jointly estimating poses and anonymous bearing associations from ranges, odometry, and optional bearings.
+
 - **AnyAmber: A Generalist for Versatile Anonymous Bearing and Range Based Position Tracking**  
   **Si Wang**, Yanmei Jiao, Yanjun Cao, Rong Xiong, Yue Wang  
   Robotics: Science and Systems (RSS), 2026.<br>
@@ -30,6 +35,7 @@ My research interests include robotics, perception, localization, and world mode
 
 ## News
 
+- **2026.11**: AnyAmber++ was submitted to IEEE Transactions on Robotics (T-RO).
 - **2026.07**: AnyAmber was published in the proceedings of RSS 2026. [Paper](https://roboticsproceedings.org/rss22/p168.html)
 - **2026.04**: AnyAmber was accepted to Robotics: Science and Systems 2026 (RSS 2026).
 - **2025.06**: Mr. Virgil was accepted to IEEE/RSJ International Conference on Intelligent Robots and Systems 2025 (IROS 2025).
@@ -46,6 +52,7 @@ Open `index.html` directly in a browser. No build, server, CDN, or package insta
 - English content lives in `index.html`; Chinese translations live in `assets/site.js`. Keep both updated together. Paper titles and author lists retain their published spelling.
 - Paper PDFs are hosted by RSS or arXiv. The RA-L paper links to IEEE Xplore and DBLP. Local paper, overview, and poster PDFs have been removed; ignore rules prevent them from being reintroduced accidentally.
 - AnyAmber uses the original [experiment animation](https://github.com/HiOnes/AnyAmber/blob/main/assets/experiment-demo.gif) from its code repository, stored as `assets/anyamber-experiment.gif` (697 x 480, approximately 7.6 MB). It loads lazily and supports the same image enlargement as the other figures.
+- AnyAmber++ is a submitted manuscript, not an accepted publication. Its author order is confirmed by the author; no manuscript or code link is published. `assets/anyamberpp-teaser.png` is a full, uncropped rendering of `figures/teaser-compact-v1.pdf`, the teaser used in the manuscript; the source manuscript and PDF remain outside this website repository.
 - `.preview/` contains the local A/B comparison pages and screenshots and is excluded from publication.
 - `resume.pdf` contains private contact details and must remain untracked and unlinked.
 

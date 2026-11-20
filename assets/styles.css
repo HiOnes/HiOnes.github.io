@@ -61,6 +61,7 @@ h2 svg { color: var(--muted); width: 20px; height: 20px; }
 .publication { display: grid; grid-template-columns: minmax(0, 46fr) minmax(0, 54fr); gap: 36px; padding: 30px 0; align-items: center; border-bottom: 1px solid var(--line); }
 .paper-thumb { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 16 / 10; background: #fff; border-radius: 4px; cursor: zoom-in; }
 .paper-thumb img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.paper-thumb[data-figure="anyamberpp"] { aspect-ratio: 1800 / 1315; }
 .zoom-icon { position: absolute; bottom: 8px; right: 8px; align-items: center; justify-content: center; width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 4px; color: var(--muted); background: #fff; opacity: 0; transition: opacity 120ms ease; }
 .paper-thumb:hover .zoom-icon, .paper-thumb:focus-visible .zoom-icon { opacity: 1; }
 .zoom-icon svg { width: 15px; height: 15px; }

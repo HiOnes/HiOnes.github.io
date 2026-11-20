@@ -56,12 +56,22 @@ async function checkGeometry(page) {
           await ready(page);
           assert.equal(await page.locator('html').getAttribute('data-layout'), layout);
           assert.equal(await page.locator('html').getAttribute('lang'), language === 'zh' ? 'zh-CN' : 'en');
-          assert.equal(await page.locator('.publication').count(), 4);
-          assert.equal(await page.locator('.news-list li').count(), 6);
+          assert.equal(await page.locator('.publication').count(), 5);
+          assert.equal(await page.locator('.news-list li').count(), 7);
           assert.equal(await page.locator('.contact-links svg').count(), 3);
           assert.equal(await page.locator('a[href^="papers/"], a[href^="tel:"], a[href*="resume.pdf"]').count(), 0);
           const titles = await page.locator('.publication h3').allTextContents();
-          assert(titles[0].startsWith('AnyAmber: A Generalist'));
+          assert.equal(titles[0], 'AnyAmber++: Diffusion Filtering with Recurrent Conditioning for Versatile Anonymous Bearing and Range based Localization');
+          assert(titles[1].startsWith('AnyAmber: A Generalist'));
+          assert.equal(await page.locator('#anyamberpp .paper-links, #anyamberpp h3 a').count(), 0);
+          assert.equal(await page.locator('#anyamberpp .authors').textContent(), 'Si Wang, Yanjun Cao, Haojian Lu, Rong Xiong, Yue Wang');
+          assert.equal(await page.locator('#anyamberpp .authors strong').textContent(), 'Si Wang');
+          assert.equal(await page.locator('#anyamberpp .venue').textContent(), language === 'zh' ? '已投稿至 IEEE Transactions on Robotics（T-RO），2026' : 'Submitted to IEEE Transactions on Robotics (T-RO), 2026');
+          assert.equal(await page.locator('.news-list time').first().getAttribute('datetime'), '2026-11');
+          assert.equal(await page.locator('[data-i18n="newsTro"]').textContent(), language === 'zh' ? 'AnyAmber++ 已投稿至 IEEE Transactions on Robotics（T-RO）。' : 'AnyAmber++ was submitted to IEEE Transactions on Robotics (T-RO).');
+          assert.equal(await page.locator('#anyamberpp img').getAttribute('src'), 'assets/anyamberpp-teaser.png');
+          assert((await page.locator('#anyamberpp .paper-summary').textContent()).startsWith(language === 'zh' ? '基于循环条件的扩散滤波框架' : 'A diffusion filter with recurrent conditioning'));
+          assert.equal(await page.locator('[data-i18n="footer"]').textContent(), language === 'zh' ? '© 2026 王斯 Si Wang。更新于 2026 年 11 月。' : '© 2026 Si Wang. Last updated November 2026.');
           assert.equal(await page.locator('#anyamber .paper-links a').first().getAttribute('href'), 'https://roboticsproceedings.org/rss22/p168.pdf');
           assert.equal(await page.locator('#anyamber img').getAttribute('src'), 'assets/anyamber-experiment.gif');
           await checkGeometry(page);
@@ -80,6 +90,10 @@ async function checkGeometry(page) {
             assert.equal(zoom.width, zoom.natural);
             if (language === 'zh' && width === 390 && await figure.getAttribute('data-figure') === 'anyamber') {
               await page.screenshot({ path: path.join(output, `${name}-zoom.png`) });
+            }
+            if (await figure.getAttribute('data-figure') === 'anyamberpp') {
+              assert.equal(await page.locator('#figure-image').getAttribute('alt'), await figure.locator('img').getAttribute('alt'));
+              if (language === 'zh' && width === 390) await page.screenshot({ path: path.join(output, `${name}-anyamberpp-zoom.png`) });
             }
             await page.keyboard.press('Escape');
             await page.waitForFunction(() => !document.querySelector('dialog').open);
@@ -151,10 +165,12 @@ async function checkGeometry(page) {
     const noJs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
     const fallback = await noJs.newPage();
     await fallback.goto(base);
-    assert.equal(await fallback.locator('.publication').count(), 4);
+    assert.equal(await fallback.locator('.publication').count(), 5);
+    assert.equal(await fallback.locator('#anyamberpp .venue').textContent(), 'Submitted to IEEE Transactions on Robotics (T-RO), 2026');
     assert.equal(await fallback.locator('html').getAttribute('lang'), 'en');
     assert.equal(await fallback.locator('.language-switch').isVisible(), false);
-    assert((await fallback.locator('.paper-thumb').first().getAttribute('href')).endsWith('.gif'));
+    assert.equal(await fallback.locator('.paper-thumb').first().getAttribute('href'), 'assets/anyamberpp-teaser.png');
+    assert((await fallback.locator('#anyamber .paper-thumb').getAttribute('href')).endsWith('.gif'));
     await noJs.close();
 
     const galleryPath = path.join(root, '.preview', 'index.html');

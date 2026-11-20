@@ -18,7 +18,6 @@
     summarySparse: '通过稀疏层次化激光雷达束调整，实现多机器人系统中高精度、低延迟的协同定位与建图。',
     proceedings: '官方论文集', code: '代码',
     newsTro: '<strong>AnyAmber++</strong> 已投稿至 IEEE Transactions on Robotics（T-RO）。',
-    newsPublished: '<strong>AnyAmber</strong> 正式发表于 RSS 2026 会议论文集。<a href="https://roboticsproceedings.org/rss22/p168.html" target="_blank" rel="noreferrer">论文页面</a>',
     newsRss: '<strong>AnyAmber</strong> 被 Robotics: Science and Systems（RSS 2026）录用。',
     newsIros: '<strong>Mr. Virgil</strong> 被 IEEE/RSJ 智能机器人与系统国际会议（IROS 2025）录用。',
     newsRal: '<strong>Sparse Hierarchical LiDAR Bundle Adjustment</strong> 刊载于 IEEE Robotics and Automation Letters（RA-L 2025）六月刊。',

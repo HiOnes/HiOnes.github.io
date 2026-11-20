@@ -57,7 +57,9 @@ async function checkGeometry(page) {
           assert.equal(await page.locator('html').getAttribute('data-layout'), layout);
           assert.equal(await page.locator('html').getAttribute('lang'), language === 'zh' ? 'zh-CN' : 'en');
           assert.equal(await page.locator('.publication').count(), 5);
-          assert.equal(await page.locator('.news-list li').count(), 7);
+          assert.equal(await page.locator('.news-list li').count(), 6);
+          assert.equal(await page.locator('[data-i18n="newsPublished"]').count(), 0);
+          assert.equal(await page.locator('[data-i18n="newsRss"]').count(), 1);
           assert.equal(await page.locator('.contact-links svg').count(), 3);
           assert.equal(await page.locator('a[href^="papers/"], a[href^="tel:"], a[href*="resume.pdf"]').count(), 0);
           const titles = await page.locator('.publication h3').allTextContents();

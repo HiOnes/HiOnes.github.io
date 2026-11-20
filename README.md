@@ -36,7 +36,6 @@ My research interests include robotics, perception, localization, and world mode
 ## News
 
 - **2026.11**: AnyAmber++ was submitted to IEEE Transactions on Robotics (T-RO).
-- **2026.07**: AnyAmber was published in the proceedings of RSS 2026. [Paper](https://roboticsproceedings.org/rss22/p168.html)
 - **2026.04**: AnyAmber was accepted to Robotics: Science and Systems 2026 (RSS 2026).
 - **2025.06**: Mr. Virgil was accepted to IEEE/RSJ International Conference on Intelligent Robots and Systems 2025 (IROS 2025).
 - **2025.06**: Sparse Hierarchical LiDAR Bundle Adjustment was published in IEEE Robotics and Automation Letters 2025 (RA-L 2025).
